@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>PetShop</title>
+        <meta charset="UTF-8">
+        <meta name="charset" content="utf-8">
+        <meta name="author" content="Catalin">
+        <meta name="description" content="Magazin online pentru animale">
+        <meta name="keywords" content="magazin, online, animale, caine, pisica, peste, papagal, colivie, hrana oentru animale">
+        <link rel="stylesheet" href="style-cat.css">
+        <link rel="icon" href="./icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="dropdown" id="drop-icon">
+                    <a href="index.html">
+                        <img id="nav_icon" src="./icon.jpg" alt="">
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <div class="dropbtn"><a href="#">CAINI</a></div>
+                    <div class="dropdown-content">
+                        <div class="drop-img"><img src="./dog.webp" alt=""></div>
+                        <div>
+                            <a href="#">Papagali</a>
+                            <a href="#">Hrana</a>
+                            <a href="#">Jucarii</a>
+                            <a href="#">Igiena</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="dropdown">
+                    <div class="dropbtn"><a class="current" href="cat.html">PISICI</a></div>
+                    <div class="dropdown-content">
+                        <div class="drop-img"><img src="./cat.jpg" alt=""></div>
+                        <div>
+                            <a href="#pisici">Pisici</a>
+                            <a href="#hrana">Hrana</a>
+                            <a href="#jucarii">Jucarii</a>
+                            <a href="#igiena">Igiena</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="dropdown">
+                    <div class="dropbtn"><a href="#">PAPAGALI</a></div>
+                    <div class="dropdown-content">
+                        <div class="drop-img"><img src="./parrot.jpg" alt=""></div>
+                        <div>
+                            <a href="#">Papagali</a>
+                            <a href="#">Hrana</a>
+                            <a href="#">Jucarii</a>
+                            <a href="#">Igiena</a>
+                            <a href="#">Colivii</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="dropdown">
+                    <div class="dropbtn"><a href="#">PESTI</a></div>
+                    <div class="dropdown-content">
+                        <div class="drop-img"><img src="./fish.jpg" alt=""></div>
+                        <div>
+                            <a href="#">Pesti</a>
+                            <a href="#">Hrana</a>
+                            <a href="#">Igiena</a>
+                            <a href="#">Acvariu</a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="dropdown" id="menu">
+                    <button class="dropbtn">MENU</button>
+                    <div class="dropdown-content">
+                        <div>
+                            <a href="#">CAINI</a>
+                            <a href="cat.html">PISICI</a>
+                            <a href="#">PAPAGALI</a>
+                            <a href="#">PESTI</a>
+                        </div>
+                    </div>
+                </div> 
+            </nav>
+        </header>
+        <main>
+            <aside class="categories">
+                <div class="filtru">
+                    <div class="denumire">Categorie</div>
+                    <div class="alegeri">
+                        <div>
+                            <input type="checkbox" id="check-pisici">
+                            <label for="check-pisici">Pisici</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="check-hrana">
+                            <label for="check-hrana">Hrana</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="check-jucarii">
+                            <label for="check-jucarii">Jucarii</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="check-igiena">
+                            <label for="check-igiena">Igiena</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtru">
+                    <div class="denumire">Pret</div>
+                    <div class="alegeri">
+                        <div>
+                            <input type="checkbox" id="sub50">
+                            <label for="sub50">Sub 50</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="50-100">
+                            <label for="50-100">50-100</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="100-500">
+                            <label for="100-500">100-500</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="peste500">
+                            <label for="peste500">Peste 500</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtru">
+                    <div class="denumire">Disponibilitate</div>
+                    <div class="alegeri">
+                        <div>
+                            <input type="checkbox" id="stoc">
+                            <label for="stoc">In stoc</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="promotii">
+                            <label for="promotii">Promotii</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="curand">
+                            <label for="curand">In curand</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filtru">
+                    <div class="denumire">Varsta</div>
+                    <div class="alegeri">
+                        <div>
+                            <input type="checkbox" id="Junior">
+                            <label for="Junior">Junior</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Adult">
+                            <label for="Adult">Adult</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="Senior">
+                            <label for="Senior">Senior</label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section>
+                <div class="tip">
+                    <div class="tip-categorie"  id="pisici">
+                        <div class="linie"></div>
+                        <h2>Pisici</h2>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <img src="./british.jpg" alt="">
+                            <p class="descriere-item">British</p>
+                            <p class="pret">500</p>
+                        </div>
+                        <div class="item">
+                            <img src="./main-coon.jpg" alt="">
+                            <p class="descriere-item">Maine coon</p>
+                            <p class="pret">1000</p>
+                        </div>
+                        <div class="item">
+                            <img src="./Abyssinian.jpg" alt="">
+                            <p class="descriere-item">Abyssian</p>
+                            <p class="pret">300</p>
+                        </div>
+                        <div class="item">
+                            <img src="./birman.jpg" alt="">
+                            <p class="descriere-item">Birman</p>
+                            <p class="pret">700</p>
+                        </div>
+                        <div class="item">
+                            <img src="./bengal.jpg" alt="">
+                            <p class="descriere-item">Bengal</p>
+                            <p class="pret">700</p>
+                        </div>
+                        <div class="item">
+                            <img src="./bombay.jpg" alt="">
+                            <p class="descriere-item">Bombay</p>
+                            <p class="pret">400</p>
+                        </div>
+                    </div>
+                    <div class="tip-categorie" id="hrana">
+                        <div class="linie"></div>
+                        <h2>Hrana</h2>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <img src="./hrana1.jpg" alt="">
+                            <p class="descriere-item">Whiskas</p>
+                            <p class="pret">208</p>
+                        </div>
+                        <div class="item">
+                            <img src="./hrana2.jpg" alt="">
+                            <p class="descriere-item">Gourmet</p>
+                            <p class="pret">147</p>
+                        </div>
+                        <div class="item">
+                            <img src="./hrana3.jpg" alt="">
+                            <p class="descriere-item">Purina</p>
+                            <p class="pret">189</p>
+                        </div>
+                        <div class="item">
+                            <img src="./hrana4.jpg" alt="">
+                            <p class="descriere-item">Royal Canin</p>
+                            <p class="pret">94</p>
+                        </div>
+                        <div class="item">
+                            <img src="./hrana5.jpg" alt="">
+                            <p class="descriere-item">Kitekat</p>
+                            <p class="pret">78</p>
+                        </div>
+                    </div>
+                    <div class="tip-categorie" id="jucarii">
+                        <div class="linie"></div>
+                        <h2>Jucarii</h2>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <img src="./toy1.jpg" alt="">
+                            <p class="descriere-item">Trixie Turn</p>
+                            <p class="pret">50</p>
+                        </div>
+                        <div class="item">
+                            <img src="./toy2.jpg" alt="">
+                            <p class="descriere-item">Ansamblu de joaca</p>
+                            <p class="pret">200</p>
+                        </div>
+                        <div class="item">
+                            <img src="./toy3.jpg" alt="">
+                            <p class="descriere-item">Diagonal cilindru</p>
+                            <p class="pret">70</p>
+                        </div>
+                        <div class="item">
+                            <img src="./toy4.jpg" alt="">
+                            <p class="descriere-item">Senses mingiute</p>
+                            <p class="pret">85</p>
+                        </div>
+                        <div class="item">
+                            <img src="./toy5.jpg" alt="">
+                            <p class="descriere-item">Trixie junior Fleece</p>
+                            <p class="pret">50</p>
+                        </div>
+                        <div class="item">
+                            <img src="./toy6.jpg" alt="">
+                            <p class="descriere-item">Trixie soricel</p>
+                            <p class="pret">15</p>
+                        </div>
+                        <div class="item">
+                            <img src="./toy7.jpg" alt="">
+                            <p class="descriere-item">Trixie mingiute</p>
+                            <p class="pret">10</p>
+                        </div>
+                    </div>
+                    <div class="tip-categorie" id="igiena">
+                        <div class="linie"></div>
+                        <h2>Igiena</h2>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <img src="./igiena1.jpg" alt="">
+                            <p class="descriere-item">Purina Tidy</p>
+                            <p class="pret">220</p>
+                        </div>
+                        <div class="item">
+                            <img src="./igiena2.jpg" alt="">
+                            <p class="descriere-item">Servetele pt ochi</p>
+                            <p class="pret">27</p>
+                        </div>
+                        <div class="item">
+                            <img src="./igiena3.jpg" alt="">
+                            <p class="descriere-item">Dispozitiv e hranit</p>
+                            <p class="pret">120</p>
+                        </div>
+                        <div class="item">
+                            <img src="./igiena4.jpg" alt="">
+                            <p class="descriere-item">FURminator</p>
+                            <p class="pret">110</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.snapchat.com"><i class="fab fa-snapchat"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                Rapcea Catalin @ 2023
+            </p>
+    </footer>
+    </body>
+</html>

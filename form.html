@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>LOGIN</title>
+        <meta charset="UTF-8">
+        <meta name="charset" content="utf-8">
+        <link rel="stylesheet" href="style-form.css">
+        <link rel="icon" href="./icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <script src="https://kit.fontawesome.com/0801a0972f.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="form.js"></script>
+    </head>
+    <body>
+        <div class="form-box" id="formular">
+            <h1 id="title">Sign up</h1>
+            <form action="/index.html" method="get" id="form">
+                <div class="input-group">
+                    <div class="input-field hide">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" id="nume" placeholder="Nume">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Email">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-field hide">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="text" id="telefon" placeholder="Telefon">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="parola"placeholder="Parola">
+                        <div class="error"></div>
+                    </div>
+                </div>
+                <div class="btn-field">
+                    <button type="submit" id="signupBtn" value="Go">Sign up</button>
+                    <button type="submit" id="signinBtn" value="Go" class="disable">Sign in</button>
+                </div>
+                
+            </form>
+        </div>
+
+
+    </body>
+</html>

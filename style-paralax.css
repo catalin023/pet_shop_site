@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    position: relative;
+}
+section{
+    height: 2000px;
+    background-color: aqua;
+    z-index: -5;
+}
+
+aside{
+    height: 300px;
+    width: 50%;
+    background-color: burlywood;
+    position: fixed;
+    top:30%;
+    z-index: 999;
+}
+
+#right{
+    margin-left: 50%;
+}
+
+.parala{
+    animation: paralax 2s infinite;
+}
+
+@keyframes paralax {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(500px);
+    }
+    
+    
+}
